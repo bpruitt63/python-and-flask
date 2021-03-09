@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Madlibs Form</title>
+    </head>
+    <body>
+        <form action='/story'>
+            {% for word in words %}
+            <label for={{word}}>{{word}}</label>
+            <input type="text" name={{word}}></br></br>
+            {%endfor%}
+            <button>Submit</button>
+        </form>
+    </body>
+</html>

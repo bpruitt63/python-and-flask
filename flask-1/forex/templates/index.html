@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forex Converter</title>
+        <link rel="stylesheet" href="static/app.css">
+    </head>
+    <body>
+        <h1>FOREX CONVERTER</h1>
+        {% for msg in get_flashed_messages() %}
+            <p class='msg'>{{msg}}</p>
+        {% endfor %}
+        <form action='/submit'>
+            <label for='frm'>Converting from </label>
+            <input type='text' name='frm'><br><br>
+            <label for='to'>Converting to </label>
+            <input type='text' name='to'><br><br>
+            <label for='amount'>Amount: </label>
+            <input type='number' name='amount' min='0' step='.01'><br><br>
+            <button type='submit' class='btn'>Convert</button>
+        </form>
+    </body>
+</html>

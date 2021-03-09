@@ -1,0 +1,67 @@
+html, body {
+    height: 95%;
+}
+
+#contents {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.row {
+    display: none;
+}
+
+#game {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 70%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.letter {
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 10%;
+    box-shadow: 5px 5px gray;
+    text-align: center;
+    font-size: 3em;
+}
+
+#start {
+    width: 35%;
+    height: 65%;
+    font-size: 3em;
+    background-color: teal;
+    border-radius: 10%;
+}
+
+#start:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+form, p {
+    font-size: 1.2em;
+}
+
+#result {
+    font-size: 1.5em;
+    color: red;
+}
+
+input {
+    font-size: 1.2em;
+}
+
+#submit {
+    font-size: 1.2em;
+    padding: 5px 15px 5px 15px;
+}
+
+.stat {
+    margin-left: 15px;
+    margin-right: 15px;
+}
